@@ -12,7 +12,7 @@ const NAV = [
 ];
 
 const S = {
-  header:   { backgroundColor:"#1B3A6B", position:"sticky" as const, top:0, zIndex:50, boxShadow:"0 2px 8px rgba(0,0,0,.25)" },
+  header:   { backgroundColor:"#d6dce6", position:"sticky" as const, top:0, zIndex:50, boxShadow:"0 2px 8px rgba(0,0,0,.25)" },
   topBar:   { maxWidth:1280, margin:"0 auto", padding:"0 20px", height:68, display:"flex", alignItems:"center", gap:12 },
   logo:     { display:"flex", alignItems:"center", flexShrink:0, textDecoration:"none" as const },
   navWrap:  { flex:1, display:"flex", justifyContent:"center" as const, gap:2 },

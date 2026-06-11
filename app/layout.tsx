@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.URL),
   icons: {
     icon:        [
-      { url: "/favicon.png",  type: "image/png"              },
+      { url: "/favicon1.png",  type: "image/png"              },
       { url: "/favicon.ico",  sizes: "any"                   },
     ],
-    apple:       [{ url: "/favicon.png", sizes: "180x180"    }],
-    shortcut:    "/favicon.png",
+    apple:       [{ url: "/favicon1.png", sizes: "180x180"    }],
+    shortcut:    "/favicon1.png",
   },
   openGraph: {
     type:      "website",

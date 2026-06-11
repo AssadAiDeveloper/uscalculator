@@ -56,7 +56,7 @@ export default function Header() {
           className="hidden md:flex">
           {NAV.map(n => (
             <Link key={n.href} href={n.href} style={S.navLink}
-              onMouseEnter={e=>{const el=e.currentTarget as HTMLElement;el.style.background="rgba(255,255,255,.14)";el.style.color="F97316";}}
+              onMouseEnter={e=>{const el=e.currentTarget as HTMLElement;el.style.background="rgba(255,255,255,.14)";el.style.color="#F97316";}}
               onMouseLeave={e=>{const el=e.currentTarget as HTMLElement;el.style.background="transparent";el.style.color="#0a13b9";}}>
               {n.label}
             </Link>

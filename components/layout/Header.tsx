@@ -16,7 +16,7 @@ const S = {
   topBar:   { maxWidth:1280, margin:"0 auto", padding:"0 20px", height:68, display:"flex", alignItems:"center", gap:12 },
   logo:     { display:"flex", alignItems:"center", flexShrink:0, textDecoration:"none" as const },
   navWrap:  { flex:1, display:"flex", justifyContent:"center" as const, gap:2 },
-  navLink:  { color:"rgba(255,255,255,.82)", textDecoration:"none" as const, padding:"7px 14px", borderRadius:8, fontSize:13, fontWeight:600, transition:"all .15s" },
+  navLink:  { color:"rgba(3, 9, 120, 0.82)", textDecoration:"none" as const, padding:"7px 14px", borderRadius:8, fontSize:13, fontWeight:600, transition:"all .15s" },
   search:   { position:"relative" as const, flexShrink:0 },
   searchIn: { width:200, background:"rgba(32, 157, 240, 0.23)", color:"#2553A0", border:"1.5px solid rgb(29, 6, 203)", borderRadius:10, padding:"7px 36px 7px 14px", fontSize:13, outline:"none" },
   catBar:   { background:"#2553A0", borderTop:"1px solid rgba(255,255,255,.08)" },

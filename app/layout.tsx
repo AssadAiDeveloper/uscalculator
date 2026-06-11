@@ -1,67 +1,15 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import { SITE } from "@/lib/metadata";
-
-export const metadata: Metadata = {
-  title: {
-    default:  `${SITE.NAME} — Free Online Calculators`,
-    template: `%s — ${SITE.NAME}`,
-  },
-  description: SITE.DESC,
-  metadataBase: new URL(SITE.URL),
-  icons: {
-    icon:        [
-      { url: "/favicon1.png",  type: "image/png"              },
-      { url: "/favicon.ico",  sizes: "any"                   },
-    ],
-    apple:       [{ url: "/favicon1.png", sizes: "180x180"    }],
-    shortcut:    "/favicon1.png",
-  },
-  openGraph: {
-    type:      "website",
-    siteName:  SITE.NAME,
-    locale:    "en_US",
-    images: [{
-      url:    `${SITE.URL}/og/home.png`,
-      width:  1200,
-      height: 630,
-      alt:    `${SITE.NAME} — Free Online Calculators`,
-    }],
-  },
-  twitter: {
-    card:        "summary_large_image",
-    site:        "@uscalculator",
-    creator:     "@uscalculator",
-    images:      [`${SITE.URL}/og/home.png`],
-  },
-  alternates: {
-    canonical: SITE.URL,
-    languages: {
-      "en-US": SITE.URL,
-    },
-  },
-  robots: {
-    index: true, follow: true,
-    googleBot: { index: true, follow: true },
-  },
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-          <head>
-  {/* Google Analytics */}
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EJFT7L4VC" />
-  <script dangerouslySetInnerHTML={{__html: `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4EJFT7L4VC');
-  `}} />
-
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EJFT7L4VC" />
+        <script dangerouslySetInnerHTML={{__html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4EJFT7L4VC');
+        `}} />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -30,7 +30,7 @@ const S = {
 export default function Header() {
   const [open, setOpen] = useState(false);
   const bar = (rot:string, op:number, tx:string) => ({
-    width:22, height:2.5, background:"#fff", borderRadius:2,
+    width:22, height:2.5, background:"#0910cc", borderRadius:2,
     transition:"all .22s", transform:rot, opacity:op, translate:tx
   } as React.CSSProperties);
   return (

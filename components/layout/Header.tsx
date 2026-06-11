@@ -18,7 +18,7 @@ const S = {
   navWrap:  { flex:1, display:"flex", justifyContent:"center" as const, gap:2 },
   navLink:  { color:"rgba(255,255,255,.82)", textDecoration:"none" as const, padding:"7px 14px", borderRadius:8, fontSize:13, fontWeight:600, transition:"all .15s" },
   search:   { position:"relative" as const, flexShrink:0 },
-  searchIn: { width:200, background:"rgba(255,255,255,.12)", color:"#2553A0", border:"1.5px solid rgba(255,255,255,.25)", borderRadius:10, padding:"7px 36px 7px 14px", fontSize:13, outline:"none" },
+  searchIn: { width:200, background:"rgba(255,255,255,.12)", color:"#2553A0", border:"1.5px solid rgb(29, 6, 203)", borderRadius:10, padding:"7px 36px 7px 14px", fontSize:13, outline:"none" },
   catBar:   { background:"#2553A0", borderTop:"1px solid rgba(255,255,255,.08)" },
   catWrap:  { maxWidth:1280, margin:"0 auto", padding:"0 20px", display:"flex", justifyContent:"center" as const, overflowX:"auto" as const },
   catLink:  { color:"rgba(255,255,255,.78)", textDecoration:"none" as const, padding:"8px 18px", fontSize:12, fontWeight:700, textTransform:"uppercase" as const, letterSpacing:"0.05em", whiteSpace:"nowrap" as const, transition:"all .15s" },
@@ -47,7 +47,7 @@ export default function Header() {
             width={180}
             height={54}
             priority
-            style={{ height: 100, width: "auto", maxWidth: 350}}
+            style={{ height: 200, width: "auto", maxWidth: 350}}
           />
         </Link>
 

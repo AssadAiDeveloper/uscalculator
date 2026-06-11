@@ -57,7 +57,7 @@ export default function Header() {
           {NAV.map(n => (
             <Link key={n.href} href={n.href} style={S.navLink}
               onMouseEnter={e=>{const el=e.currentTarget as HTMLElement;el.style.background="rgba(255,255,255,.14)";el.style.color="#fff";}}
-              onMouseLeave={e=>{const el=e.currentTarget as HTMLElement;el.style.background="transparent";el.style.color="rgba(255,255,255,.82)";}}>
+              onMouseLeave={e=>{const el=e.currentTarget as HTMLElement;el.style.background="transparent";el.style.color="#94C5FF";}}>
               {n.label}
             </Link>
           ))}

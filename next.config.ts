@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
       },
       // Cache images 30 days
       {
-        source: "/:path*\\.(:ext(png|jpg|jpeg|gif|svg|ico|webp))",
+        source: "/:path*.(png|jpg|jpeg|gif|svg|ico|webp)",
         headers: [
           { key: "Cache-Control", value: "public, max-age=2592000, stale-while-revalidate=86400" },
         ],

@@ -198,9 +198,11 @@ body {
   div[style*="max-width:1280px"][style*="padding:28px 24px"] {
     padding: 16px !important;
   }
-  /* Main flex layout → column */
+  /* Main flex layout → column (stretch so items fill width,
+     otherwise inline align-items:flex-start sizes to max-content and overflows) */
   div[style*="display:flex"][style*="gap:28px"] {
     flex-direction: column !important;
+    align-items: stretch !important;
   }
 
   /* ── CATEGORY CARDS ── */

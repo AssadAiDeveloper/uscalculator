@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title:       "Financial Calculators — Free Online Tools",
   description: "Free financial calculators for mortgage, loans, taxes, investments, retirement, and more. Fast, accurate, no sign-up.",
   alternates:  { canonical: "https://www.uscalculator.net/financial" },
-  openGraph:   { title: "Financial Calculators", description: "Free mortgage, loan, tax, and investment calculators.", url: "https://www.uscalculator.net/financial" },
+  openGraph:   { title: "Financial Calculators", description: "Free mortgage, loan, tax, and investment calculators.", url: "https://www.uscalculator.net/financial", images: [{ url: "https://www.uscalculator.net/og/financial.png", width: 1200, height: 630, alt: "Financial Calculators" }] },
 };
 
 // STATIC array — Googlebot reads these as plain HTML anchor tags

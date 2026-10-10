@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title:       "Other Calculators — Free Online Tools",
   description: "Free calculators for age, date, time, GPA, unit conversion, password generation, and more.",
   alternates:  { canonical: "https://www.uscalculator.net/other" },
-  openGraph:   { title: "Other Calculators", description: "Free age, date, GPA, and conversion calculators.", url: "https://www.uscalculator.net/other" },
+  openGraph:   { title: "Other Calculators", description: "Free age, date, GPA, and conversion calculators.", url: "https://www.uscalculator.net/other", images: [{ url: "https://www.uscalculator.net/og/other.png", width: 1200, height: 630, alt: "Other Calculators" }] },
 };
 
 const CALCULATORS = [

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     title:       calc.name,
     description: calc.description,
     url:         `${SITE.URL}/${calc.slug}`,
+    images:      [{ url: `${SITE.URL}/og/${calc.slug}.png`, width: 1200, height: 630, alt: calc.name }],
   },
 };
 

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title:       "Math Calculators — Free Online Tools",
   description: "Free math calculators for percentages, fractions, statistics, geometry, and more. Fast, accurate, no sign-up.",
   alternates:  { canonical: "https://www.uscalculator.net/math" },
-  openGraph:   { title: "Math Calculators", description: "Free percentage, fraction, and statistics calculators.", url: "https://www.uscalculator.net/math" },
+  openGraph:   { title: "Math Calculators", description: "Free percentage, fraction, and statistics calculators.", url: "https://www.uscalculator.net/math", images: [{ url: "https://www.uscalculator.net/og/math.png", width: 1200, height: 630, alt: "Math Calculators" }] },
 };
 
 const CALCULATORS = [

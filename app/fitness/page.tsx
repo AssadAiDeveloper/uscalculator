@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title:       "Fitness & Health Calculators — Free Online Tools",
   description: "Free fitness and health calculators for BMI, calories, body fat, BMR, pregnancy, and more. Fast, accurate, no sign-up.",
   alternates:  { canonical: "https://www.uscalculator.net/fitness" },
-  openGraph:   { title: "Fitness & Health Calculators", description: "Free BMI, calorie, body fat, and health calculators.", url: "https://www.uscalculator.net/fitness" },
+  openGraph:   { title: "Fitness & Health Calculators", description: "Free BMI, calorie, body fat, and health calculators.", url: "https://www.uscalculator.net/fitness", images: [{ url: "https://www.uscalculator.net/og/fitness.png", width: 1200, height: 630, alt: "Fitness & Health Calculators" }] },
 };
 
 const CALCULATORS = [

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title:       "About Us",
   description: "Learn about USCalculator.net — free, accurate, and fast online calculators for finance, fitness, math, and more.",
   alternates:  { canonical: `${SITE.URL}/about` },
-  openGraph:   { title: "About USCalculator.net", description: "Free, accurate calculators for finance, fitness, math, and more.", url: `${SITE.URL}/about` },
+  openGraph:   { title: "About USCalculator.net", description: "Free, accurate calculators for finance, fitness, math, and more.", url: `${SITE.URL}/about`, images: [{ url: `${SITE.URL}/og/about.png`, width: 1200, height: 630, alt: "About USCalculator.net" }] },
 };
 
 const SCHEMA = JSON.stringify({

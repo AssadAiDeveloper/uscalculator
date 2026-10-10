@@ -184,7 +184,7 @@ body {
     font-size: 14px !important;
   }
   /* Quick links */
-  section div[style*="justifyContent: \"center\""] {
+  section div[style*="justify-content:center"][style*="flex-wrap:wrap"] {
     padding-bottom: 28px !important;
   }
   /* Stats strip */
@@ -195,17 +195,17 @@ body {
   }
 
   /* ── MAIN CONTENT ── */
-  div[style*="maxWidth: 1280"][style*="padding: \"28px 24px\""] {
+  div[style*="max-width:1280px"][style*="padding:28px 24px"] {
     padding: 16px !important;
   }
   /* Main flex layout → column */
-  div[style*="display: \"flex\""][style*="gap: 28"] {
+  div[style*="display:flex"][style*="gap:28px"] {
     flex-direction: column !important;
   }
 
   /* ── CATEGORY CARDS ── */
   /* Two-column list → one column */
-  div[style*="gridTemplateColumns: \"1fr 1fr\""] {
+  div[style*="grid-template-columns:1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
   /* Featured grid → 2 cols */
@@ -224,14 +224,14 @@ body {
     font-size: 12px !important;
   }
   /* Calc header */
-  div[style*="width: 52"] {
+  div[style*="width:52px"] {
     width: 42px !important;
     height: 42px !important;
     font-size: 22px !important;
   }
 
   /* ── SIDEBAR → hide on mobile ── */
-  div[style*="width: 272"] {
+  div[style*="width:272px"] {
     display: none !important;
   }
 
@@ -242,7 +242,7 @@ body {
   }
 
   /* ── HEADER ── */
-  header div[style*="height: 58"] {
+  header div[style*="height:72px"] {
     padding: 0 14px !important;
   }
 }
@@ -262,13 +262,14 @@ body {
     grid-template-columns: repeat(2, 1fr) !important;
   }
   /* Calculator result values */
-  div[style*="fontSize: 44"] { font-size: 34px !important; }
-  div[style*="fontSize: 42"] { font-size: 34px !important; }
-  div[style*="fontSize: 52"] { font-size: 40px !important; }
+  div[style*="font-size:44px"] { font-size: 34px !important; }
+  div[style*="font-size:42px"] { font-size: 34px !important; }
+  div[style*="font-size:52px"] { font-size: 40px !important; }
+  div[style*="font-size:40px"] { font-size: 32px !important; }
   /* Charts overflow fix */
   svg { overflow: visible; }
   /* PDF button */
-  button[style*="padding: \"9px 18px\""] {
+  button[style*="padding:9px 18px"] {
     padding: 9px 12px !important;
     font-size: 12px !important;
   }
@@ -289,11 +290,11 @@ body {
   input[type="number"] { -moz-appearance: textfield; }
 
   /* Amortization table scroll */
-  div[style*="overflowX: \"auto\""] {
+  div[style*="overflow-x:auto"] {
     -webkit-overflow-scrolling: touch;
   }
   /* Donut chart — stack on mobile */
-  div[style*="gridTemplateColumns: \"auto 1fr\""] {
+  div[style*="grid-template-columns:auto 1fr"] {
     grid-template-columns: 1fr !important;
     justify-items: center;
   }
@@ -303,7 +304,7 @@ body {
 @media (hover: none) and (pointer: coarse) {
   button, input, select { min-height: 46px; }
   a[style*="padding"] { min-height: 40px; }
-  button[style*="background: \"#F97316\""] {
+  button[style*="background:#F97316"] {
     min-height: 52px !important;
   }
 }

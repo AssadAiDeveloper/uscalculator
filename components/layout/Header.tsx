@@ -44,10 +44,12 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="USCalculator.net"
-            width={180}
-            height={54}
+            width={186}
+            height={56}
             priority
-            style={{ height: 200, width: "auto", maxWidth: 350}}
+            fetchPriority="high"
+            sizes="(max-width: 768px) 150px, 186px"
+            style={{ height: 40, width: "auto", maxWidth: 220 }}
           />
         </Link>
 

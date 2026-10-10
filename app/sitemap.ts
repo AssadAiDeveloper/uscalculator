@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.URL}/fitness`,            priority: 0.9,  changeFrequency: "weekly"  as const },
     { url: `${SITE.URL}/math`,               priority: 0.9,  changeFrequency: "weekly"  as const },
     { url: `${SITE.URL}/other`,              priority: 0.9,  changeFrequency: "weekly"  as const },
-    { url: `${SITE.URL}/search`,             priority: 0.6,  changeFrequency: "weekly"  as const },
     { url: `${SITE.URL}/about`,              priority: 0.5,  changeFrequency: "monthly" as const },
     { url: `${SITE.URL}/contact`,            priority: 0.5,  changeFrequency: "monthly" as const },
     { url: `${SITE.URL}/privacy-policy`,     priority: 0.3,  changeFrequency: "yearly"  as const },
@@ -21,7 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url:             `${SITE.URL}/${c.slug}`,
     priority:        c.featured ? 0.9 : 0.8,
     changeFrequency: "monthly" as const,
-    lastModified:    new Date(),
   }));
 
   return [...staticPages, ...calcPages];

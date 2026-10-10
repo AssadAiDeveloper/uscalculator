@@ -13,7 +13,7 @@ const NAV = [
 
 const S = {
   header:   { backgroundColor:"#ffffff", position:"sticky" as const, top:0, zIndex:50, boxShadow:"0 2px 8px rgba(0,0,0,.25)" },
-  topBar:   { maxWidth:1280, margin:"0 auto", padding:"0 20px", height:68, display:"flex", alignItems:"center", gap:12 },
+  topBar:   { maxWidth:1280, margin:"0 auto", padding:"0 20px", height:76, display:"flex", alignItems:"center", gap:12 },
   logo:     { display:"flex", alignItems:"center", flexShrink:0, textDecoration:"none" as const },
   navWrap:  { flex:1, display:"flex", justifyContent:"center" as const, gap:2 },
   navLink:  { color:"rgba(3, 9, 120, 0.82)", textDecoration:"none" as const, padding:"7px 14px", borderRadius:8, fontSize:13, fontWeight:600, transition:"all .15s" },
@@ -48,8 +48,9 @@ export default function Header() {
             height={56}
             priority
             fetchPriority="high"
-            sizes="(max-width: 768px) 150px, 186px"
-            style={{ height: 40, width: "auto", maxWidth: 220 }}
+            sizes="(max-width: 768px) 150px, 190px"
+            className="h-11 md:h-[52px] w-auto max-w-[240px]"
+            style={{ width: "auto" }}
           />
         </Link>
 

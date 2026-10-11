@@ -206,9 +206,10 @@ body {
   }
 
   /* ── CATEGORY CARDS ── */
-  /* Two-column list → one column */
+  /* Two-column list → one column (minmax(0,1fr) lets the track shrink to the
+     container instead of the item's min-content, keeping chevrons visible) */
   div[style*="grid-template-columns:1fr 1fr"] {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: minmax(0, 1fr) !important;
   }
   /* Featured grid → 2 cols */
   div[style*="minmax(200px"] {
@@ -257,7 +258,7 @@ body {
   }
   /* Featured cards → 1 col */
   div[style*="minmax(200px"] {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: minmax(0, 1fr) !important;
   }
   /* Stats → 2 cols */
   div[style*="repeat(4,1fr)"] {
@@ -297,7 +298,7 @@ body {
   }
   /* Donut chart — stack on mobile */
   div[style*="grid-template-columns:auto 1fr"] {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: minmax(0, 1fr) !important;
     justify-items: center;
   }
 }

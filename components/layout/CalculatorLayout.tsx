@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Disclaimer from "@/components/ui/Disclaimer";
+import CalcContent from "@/components/ui/CalcContent";
 import Sidebar from "./Sidebar";
 import type { Calculator } from "@/lib/calculators";
 import { getCategoryMeta, getByCategory } from "@/lib/calculators";
@@ -87,6 +88,9 @@ export default function CalculatorLayout({ calc, children }: Props) {
           </div>
 
           {children}
+
+          {/* Long-form SEO content */}
+          <CalcContent calcId={calc.id} calcName={calc.name} />
 
           {/* Disclaimer */}
           <Disclaimer type={DISCLAIMER_TYPE[calc.category] ?? "general"} />

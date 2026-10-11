@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getBySlug, buildPageJsonLd, buildBreadcrumbJsonLd } from "@/lib/calculators";
 import CalculatorLayout from "@/components/layout/CalculatorLayout";
-import CalcContent from "@/components/ui/CalcContent";
 import CalorieCalculator from "@/components/calculators/CalorieCalculator";
 import { SITE } from "@/lib/metadata";
 
@@ -22,7 +21,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildBreadcrumbJsonLd(calc)) }} />
       <CalculatorLayout calc={calc}>
         <CalorieCalculator />
-        <CalcContent calcId="calorie" calcName="Calorie Calculator" />
       </CalculatorLayout>
     </>
   );

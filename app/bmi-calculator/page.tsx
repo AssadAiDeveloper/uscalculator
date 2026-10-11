@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getBySlug, buildPageJsonLd, buildBreadcrumbJsonLd } from "@/lib/calculators";
 import CalculatorLayout from "@/components/layout/CalculatorLayout";
-import CalcContent from "@/components/ui/CalcContent";
 import BMICalculator from "@/components/calculators/BMICalculator";
 import { SITE } from "@/lib/metadata";
 

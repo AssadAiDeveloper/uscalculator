@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getBySlug, buildPageJsonLd, buildBreadcrumbJsonLd } from "@/lib/calculators";
 import CalculatorLayout from "@/components/layout/CalculatorLayout";
-import CalcContent from "@/components/ui/CalcContent";
 import MortgageCalculator from "@/components/calculators/MortgageCalculator";
 import { SITE } from "@/lib/metadata";
 
@@ -27,7 +26,6 @@ export default function MortgagePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildBreadcrumbJsonLd(calc)) }} />
       <CalculatorLayout calc={calc}>
         <MortgageCalculator />
-        <CalcContent calcId="mortgage" calcName="Mortgage Calculator" />
       </CalculatorLayout>
     </>
   );

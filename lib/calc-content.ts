@@ -1,6 +1,11 @@
 // Static content for each calculator — SEO articles (800+ words) + FAQ
 // Injected below the calculator widget on each page
 
+import { CONTENT_FIN } from "./calc-content-fin";
+import { CONTENT_FITNESS } from "./calc-content-fitness";
+import { CONTENT_MATH } from "./calc-content-math";
+import { CONTENT_OTHER } from "./calc-content-other";
+
 export interface FAQItem {
   question: string;
   answer:   string;
@@ -288,6 +293,10 @@ Emerging research on epigenetic aging — measured through patterns of DNA methy
   conclusion: `Your age is one of the most fundamental facts about your existence — and yet its precise calculation involves more nuance than most people realize. Whether you are checking eligibility for a program, filling out a medical form, or simply reflecting on time passed, this calculator gives you exact figures instantly. Remember that while chronological age is fixed by biology and calendar, how you experience and express those years is substantially within your influence.`,
 },
 
+  ...CONTENT_FIN,
+  ...CONTENT_FITNESS,
+  ...CONTENT_MATH,
+  ...CONTENT_OTHER,
 };
 
 export function getCalcContent(id: string): CalcContent | null {

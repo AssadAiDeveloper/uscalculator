@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { getBySlug, buildPageJsonLd, buildBreadcrumbJsonLd } from "@/lib/calculators";
 import CalculatorLayout from "@/components/layout/CalculatorLayout";
 import Disclaimer from "@/components/ui/Disclaimer";
-import CalcContent from "@/components/ui/CalcContent";
 import IncomeTaxCalculator from "@/components/calculators/IncomeTaxCalculator";
 import { SITE } from "@/lib/metadata";
 
@@ -24,7 +23,6 @@ export default function Page() {
       <CalculatorLayout calc={calc}>
         <IncomeTaxCalculator />
         <Disclaimer type="tax" />
-        <CalcContent calcId="tax" calcName="Income Tax Calculator" />
       </CalculatorLayout>
     </>
   );
